@@ -8,9 +8,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				bat """
-					gradle clean build
-				"""
+				//bat """
+					sh "gradle clean build"
+				//"""
             }
         }
     }
