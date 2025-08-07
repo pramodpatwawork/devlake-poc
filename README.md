@@ -1,5 +1,14 @@
 # Apache Devlake POC (DORA matrics)
 
+## Devlake Architecture Based on POC
+
+## Database schema
+
+## Jenkins & JIRA tips
+
+### JIRA token generation
+You can generate API token for JIRA using URL [JIRA Token generation] (https://id.atlassian.com/manage-profile/profile-and-visibility), click on on security and create manage api token, add verifier code and then generate classic token.
+
 ## Quick Setup Guide
 Ref: [Getting Started](https://devlake.apache.org/docs/GettingStarted/DockerComposeSetup)
 * I have used docker compose option for my installation.
@@ -33,3 +42,4 @@ Ref: [Getting Started](https://devlake.apache.org/docs/GettingStarted/DockerComp
 ![CICD](/images/CICDMatrics.png)
 ![CICD](/images/workflow1.png)
 ![CICD](/images/meanworkflowrunduration.png)
+
