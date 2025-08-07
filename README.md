@@ -8,6 +8,10 @@ tool (base level data normalization)
 without prefix (domain) (tables contains analytics data)
 [Ref](https://devlake.apache.org/docs/DataModels/DevLakeDomainLayerSchema/)
 
+## Creating custom dashboard
+* Grafana allowed to create custom dashboard. you can design your MySQL query based on your requirement and results can be published to dashboard.
+* You can also create go plugin or connector in any programing language if you need data from diffrent source or any data from APIs (github/jenkins/jira). You have to create tables and design query to render dashboard.
+
 ## Jenkins & JIRA tips
 
 ### JIRA token generation
