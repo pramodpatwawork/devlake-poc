@@ -17,3 +17,19 @@ Ref: https://devlake.apache.org/docs/GettingStarted/DockerComposeSetup
    *   once configuration done you can click on collect data button within project and can see status.
    *   Once sync done click on dashboard link on top right corner.
    *   Go to dashboards and select github then you will be able to see bellow nice dashboard
+
+![PRs Welcome](/images/requirements.png)
+![PRs Welcome](/images/issues.png)
+![PRs Welcome](/images/meanissueresolutiontime.png)
+![PRs Welcome](/images/top20queuetime.png)
+![PRs Welcome](/images/outstandingissues.png)
+![PRs Welcome](/images/pull.png)
+![PRs Welcome](/images/CICDMatrics.png)
+![PRs Welcome](/images/top20contributer.png)
+![PRs Welcome](/images/prmerged.png)
+![CICD](/images/noofprs.png)
+![CICD](/images/meantimetomergepull.png)
+![CICD](/images/meantimetoclosepullinaday.png)
+![CICD](/images/CICDMatrics.png)
+![CICD](/images/workflow1.png)
+![CICD](/images/meanworkflowrunduration.png)
