@@ -1,5 +1,9 @@
 # Apache Devlake POC (DORA matrics)
 
+## DORA Matrics
+
+[DORA Website](https://dora.dev/guides/dora-metrics-four-keys/)
+[Good to read](https://medium.com/@shahar.wiener/enhancing-developer-experience-with-linearb-metrics-46a4a3eaa8b9)
 ## Devlake Architecture Based on POC
 
 ## Database schema
