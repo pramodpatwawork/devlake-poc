@@ -16,4 +16,4 @@ Ref: https://devlake.apache.org/docs/GettingStarted/DockerComposeSetup
    *   Additionally you can define datascope config and define transformation rules in that config. I have create one with default rule.
    *   once configuration done you can click on collect data button within project and can see status.
    *   Once sync done click on dashboard link on top right corner.
-   *   Go to dashboard and select github then you will be able to see bellow nice dashboard
+   *   Go to dashboards and select github then you will be able to see bellow nice dashboard
