@@ -3,9 +3,10 @@
 ## Devlake Architecture Based on POC
 
 ## Database schema
-raw (table name starts with raw stores as is data from api call)
-tool (base level data normalization)
-without prefix (domain) (tables contains analytics data)
+* raw (table name starts with raw stores as is data from api call)
+* tool (base level data normalization)
+* without prefix (domain) (tables contains analytics data)
+  
 [Ref](https://devlake.apache.org/docs/DataModels/DevLakeDomainLayerSchema/)
 
 ## Creating custom dashboard
