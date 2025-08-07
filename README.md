@@ -1,9 +1,9 @@
 # Apache Devlake POC (DORA matrics)
 
 ## Quick Setup Guide
-Ref: https://devlake.apache.org/docs/GettingStarted/DockerComposeSetup
+Ref: [Getting Started](https://devlake.apache.org/docs/GettingStarted/DockerComposeSetup)
 * I have used docker compose option for my installation.
-* Download  [docker-compose.yml](https://github.com/apache/incubator-devlake/releases/download/v1.0.2/docker-compose.yml) and [env.example] (https://github.com/apache/incubator-devlake/releases/download/v1.0.2/env.example). I have downloaded version v1.0.2. you can choose any latest version. you can visit [apache devlake release url](https://github.com/apache/incubator-devlake/releases), click on version you want and download file from assests section showing in bottom of page.
+* Download  [docker-compose.yml](https://github.com/apache/incubator-devlake/releases/download/v1.0.2/docker-compose.yml) and [env.example](https://github.com/apache/incubator-devlake/releases/download/v1.0.2/env.example). I have downloaded version v1.0.2. you can choose any latest version. you can visit [apache devlake release url](https://github.com/apache/incubator-devlake/releases), click on version you want and download file from assests section showing in bottom of page.
 * Rename env.example to .env file and put docker compose and .env file on same folder, you have to adjust docker compose yml to specify .env location if docker is not picking file. in my case .env file was not picked by docker (I was using windows docker desktop to run image) , so I specify all required variable in yml itself.
 * Generate ENCRYPTION_SECRET by following instrunctions on devlake getting started guide. I was using windows so used gitash to generate keys. once key generated copy from command and define it either in .env or environment section of yml file
 *  run "docker-compose up -d" command. that will download all required images (config-ui,devlake,mysql,grafana).
