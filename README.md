@@ -1,9 +1,22 @@
 # Apache Devlake POC (DORA matrics)
 
+## Devlake Architecture Based on POC
+
+## Database schema
+raw (table name starts with raw stores as is data from api call)
+tool (base level data normalization)
+without prefix (domain) (tables contains analytics data)
+[Ref](https://devlake.apache.org/docs/DataModels/DevLakeDomainLayerSchema/)
+
+## Jenkins & JIRA tips
+
+### JIRA token generation
+You can generate API token for JIRA using URL [JIRA Token generation] (https://id.atlassian.com/manage-profile/profile-and-visibility), click on on security and create manage api token, add verifier code and then generate classic token.
+
 ## Quick Setup Guide
-Ref: https://devlake.apache.org/docs/GettingStarted/DockerComposeSetup
+Ref: [Getting Started](https://devlake.apache.org/docs/GettingStarted/DockerComposeSetup)
 * I have used docker compose option for my installation.
-* Download  [docker-compose.yml](https://github.com/apache/incubator-devlake/releases/download/v1.0.2/docker-compose.yml) and [env.example] (https://github.com/apache/incubator-devlake/releases/download/v1.0.2/env.example). I have downloaded version v1.0.2. you can choose any latest version. you can visit [apache devlake release url](https://github.com/apache/incubator-devlake/releases), click on version you want and download file from assests section showing in bottom of page.
+* Download  [docker-compose.yml](https://github.com/apache/incubator-devlake/releases/download/v1.0.2/docker-compose.yml) and [env.example](https://github.com/apache/incubator-devlake/releases/download/v1.0.2/env.example). I have downloaded version v1.0.2. you can choose any latest version. you can visit [apache devlake release url](https://github.com/apache/incubator-devlake/releases), click on version you want and download file from assests section showing in bottom of page.
 * Rename env.example to .env file and put docker compose and .env file on same folder, you have to adjust docker compose yml to specify .env location if docker is not picking file. in my case .env file was not picked by docker (I was using windows docker desktop to run image) , so I specify all required variable in yml itself.
 * Generate ENCRYPTION_SECRET by following instrunctions on devlake getting started guide. I was using windows so used gitash to generate keys. once key generated copy from command and define it either in .env or environment section of yml file
 *  run "docker-compose up -d" command. that will download all required images (config-ui,devlake,mysql,grafana).
@@ -17,3 +30,20 @@ Ref: https://devlake.apache.org/docs/GettingStarted/DockerComposeSetup
    *   once configuration done you can click on collect data button within project and can see status.
    *   Once sync done click on dashboard link on top right corner.
    *   Go to dashboards and select github then you will be able to see bellow nice dashboard
+
+![PRs Welcome](/images/requirements.png)
+![PRs Welcome](/images/issues.png)
+![PRs Welcome](/images/meanissueresolutiontime.png)
+![PRs Welcome](/images/top20queuetime.png)
+![PRs Welcome](/images/outstandingissues.png)
+![PRs Welcome](/images/pull.png)
+![PRs Welcome](/images/CICDMatrics.png)
+![PRs Welcome](/images/top20contributer.png)
+![PRs Welcome](/images/prmerged.png)
+![CICD](/images/noofprs.png)
+![CICD](/images/meantimetomergepull.png)
+![CICD](/images/meantimetoclosepullinaday.png)
+![CICD](/images/CICDMatrics.png)
+![CICD](/images/workflow1.png)
+![CICD](/images/meanworkflowrunduration.png)
+
